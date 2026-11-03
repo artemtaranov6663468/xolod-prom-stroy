@@ -499,7 +499,12 @@ const PROJECTS = [
       uz: "Yong‘inga qarshi tizim va sprinklerlar.",
       en: "Fire system and sprinklers."
     } },
-  { city: "tashkent", map: "Almazar City Tashkent",
+  { city: "tashkent", img: "img/almazar.jpg", map: "Almazar City Tashkent",
+    credit: {
+      ru: "Рисунок жилого комплекса Olmazor Business City с открытой страницы новостроек, улица Янги Олмазор. В письме объект назван Almazar City. Это не фото готовых домов и не снимок наших работ.",
+      uz: "Yangi Olmazor ko‘chasidagi Olmazor Business City rasmi, ochiq yangi uylar sahifasidan. Xatda obyekt Almazar City deb yozilgan. Bu tayyor uylar surati ham, bizning ishimiz ham emas.",
+      en: "A drawing of Olmazor Business City from a public new-build page, Yangi Olmazor Street. The letter names Almazar City. Not a photo of the finished buildings and not a photo of our work."
+    },
     title: { ru: "Almazar City", uz: "Almazar City", en: "Almazar City" },
     place: { ru: "Ташкент", uz: "Toshkent", en: "Tashkent" },
     work: {
@@ -539,7 +544,12 @@ const PROJECTS = [
       uz: "Eski tizimni yechish va yangi issiqlik-sovuqni o‘rnatish, fankoillar, chiller.",
       en: "Removal of the old system and installation of new heating and cooling, fan coils, a chiller."
     } },
-  { city: "tashkent", map: "Министерство экономики и финансов Узбекистана Ташкент",
+  { city: "tashkent", img: "img/finance.jpg", map: "Министерство экономики и финансов Узбекистана Ташкент",
+    credit: {
+      ru: "Открытое фото площади Мустакиллик: на туристическом сайте кадр подписан зданием Министерства финансов. Министерство стоит на улице Истиклол, 29. Это здание, не снимок котельной.",
+      uz: "Mustaqillik maydonining ochiq surati: sayyohlik saytida kadr Moliya vazirligi binosi deb yozilgan. Vazirlik Istiqlol ko‘chasi, 29-uyda. Bu bino, qozonxona surati emas.",
+      en: "A public photo of Mustaqillik Square. A travel site captions the frame as the Ministry of Finance building. The ministry is at 29 Istiklol Street. The building, not a photo of the boiler plant."
+    },
     title: { ru: "Министерство экономики и финансов", uz: "Iqtisodiyot va moliya vazirligi", en: "Ministry of Economy and Finance" },
     place: { ru: "Ташкент", uz: "Toshkent", en: "Tashkent" },
     work: {
@@ -589,7 +599,12 @@ const PROJECTS = [
       uz: "Sprinklerli yong‘in o‘chirish, suv va kanalizatsiya.",
       en: "Sprinkler fire protection, water supply and drainage."
     } },
-  { city: "tashkent", map: "Сергели автосалон Ташкент",
+  { city: "tashkent", img: "img/sergeli.png", map: "Сергели автосалон Ташкент",
+    credit: {
+      ru: "Фото со страницы строительства автосалона «Сергели» 48×48, заказчик GM Uzbekistan. Это здание салона, не снимок наших работ.",
+      uz: "«Sergeli» avtosaloni 48×48 qurilishi sahifasidagi surat, buyurtmachi GM Uzbekistan. Bu salon binosi, bizning ishimizning surati emas.",
+      en: "A photo from the page of the Sergeli showroom build, 48×48, client GM Uzbekistan. The showroom building, not a photo of our work."
+    },
     title: { ru: "Автосалон Сергели", uz: "Sergeli avtosaloni", en: "Sergeli car showroom" },
     place: { ru: "Ташкент, Сергели", uz: "Toshkent, Sergeli", en: "Tashkent, Sergeli" },
     work: {
@@ -597,7 +612,12 @@ const PROJECTS = [
       uz: "Chiller, qozonxonalar, ventilyatsiya, fankoillar, isitish, santexnika.",
       en: "Chiller, boiler plants, ventilation, fan coils, heating, plumbing."
     } },
-  { city: "tashkent", map: "Академия Вооружённых Сил ТВОКУ Ташкент",
+  { city: "tashkent", img: "img/academy.jpg", map: "Академия Вооружённых Сил ТВОКУ Ташкент",
+    credit: {
+      ru: "Вход Академии вооружённых сил на улице Паркент, бывшее ТВОКУ. Надпись на камне: «O‘zbekiston Respublikasi Qurolli Kuchlari Akademiyasi». Это вход, не снимок котельной.",
+      uz: "Parkent ko‘chasidagi Qurolli Kuchlar akademiyasining kirishi, sobiq TVOKU. Toshdagi yozuv: «O‘zbekiston Respublikasi Qurolli Kuchlari Akademiyasi». Bu kirish, qozonxona surati emas.",
+      en: "The entrance of the Armed Forces Academy on Parkent Street, the former TVOKU. The stone reads “O‘zbekiston Respublikasi Qurolli Kuchlari Akademiyasi”. The entrance, not a photo of the boiler plant."
+    },
     title: { ru: "Военная академия, котельная", uz: "Harbiy akademiya, qozonxona", en: "Military academy, boiler plant" },
     place: { ru: "Ташкент, ТВОКУ", uz: "Toshkent, TVOKU", en: "Tashkent, TVOKU" },
     work: {
@@ -605,7 +625,12 @@ const PROJECTS = [
       uz: "Qozon va nasoslarni ulash, suvni tayyorlash, qozonxonaga gaz.",
       en: "Piping of boilers and pumps, water treatment, gas to the boiler plant."
     } },
-  { city: "bukhara", img: "img/bukhara.jpg", map: "Бухара Мега Маркет Чинор",
+  { city: "bukhara", img: "img/chinor.webp", map: "Бухара Мега Маркет Чинор",
+    credit: {
+      ru: "Фото торгового центра Chinar Mall в Бухаре, на фасаде вывеска CHINAR Mall. В письме объект назван «Мега Маркет Чинор». Это здание, не снимок наших работ.",
+      uz: "Buxorodagi Chinar Mall savdo markazining surati, fasadda CHINAR Mall yozuvi bor. Xatda obyekt «Mega Market Chinor» deb yozilgan. Bu bino, bizning ishimizning surati emas.",
+      en: "A photo of Chinar Mall in Bukhara. The facade reads CHINAR Mall. The letter names Mega Market Chinor. The building, not a photo of our work."
+    },
     title: { ru: "Мега Маркет Чинор", uz: "Mega Market Chinor", en: "Mega Market Chinor" },
     place: { ru: "Бухара", uz: "Buxoro", en: "Bukhara" },
     work: {
@@ -703,9 +728,14 @@ const PROJECTS = [
       uz: "Issiqlik va sovuq, chillerlarni ulash, quyoshli isitish qurilmalari.",
       en: "Heating and cooling, chiller piping, solar heating units."
     } },
-  { city: "other", map: "ЖК SEUL бассейн",
+  { city: "tashkent", img: "img/seoul.jpg", map: "ЖК SEUL бассейн Seoul Riverside",
+    credit: {
+      ru: "Рисунок комплекса Seoul Riverside с открытой страницы, улица Баходыра, Яккасарай. В письме город не указан, объект назван ЖК SEUL с бассейном. У этого комплекса в описании есть оздоровительный блок с бассейном. Это рисунок, не фото наших работ.",
+      uz: "Bahodir ko‘chasi, Yakkasaroydagi Seoul Riverside rasmi, ochiq sahifadan. Xatda shahar yozilmagan, obyekt basseynli SEUL turar joyi deb atalgan. Bu majmua tavsifida basseynli sog‘lomlashtirish bloki bor. Bu rasm, bizning ishimizning surati emas.",
+      en: "A drawing of Seoul Riverside from a public page, Bahodir Street, Yakkasaray. The letter does not name the city and calls the object SEUL residences with a pool. That complex is described with a wellness block and a pool. A drawing, not a photo of our work."
+    },
     title: { ru: "Оздоровительный комплекс с бассейном, ЖК SEUL", uz: "SEUL turar joyidagi basseynli sog‘lomlashtirish majmuasi", en: "Wellness complex with a pool, SEUL residences" },
-    place: { ru: "Город в письме не указан", uz: "Xatda shahar yozilmagan", en: "City not stated in the letter" },
+    place: { ru: "Ташкент, Яккасарай", uz: "Toshkent, Yakkasaroy", en: "Tashkent, Yakkasaray" },
     work: {
       ru: "Отопление, вентиляция, водопровод и канализация, сборка котельных.",
       uz: "Isitish, ventilyatsiya, suv va kanalizatsiya, qozonxonalarni yig‘ish.",
