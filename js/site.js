@@ -478,7 +478,12 @@ const PROJECTS = [
       uz: "Fankoillar, issiqlik pardalari, chillerlar, issiqlik va sovuq trassalari, 20 megavattli qozonxona, issiqlik-sovuq uzellari, isitish.",
       en: "Fan coils, air curtains, chillers, heating and cooling mains, a 20 MW boiler plant, heating and cooling stations, heating."
     } },
-  { city: "tashkent", map: "Tashkent International Airport Islam Karimov",
+  { city: "tashkent", img: "img/airport.jpg", map: "Tashkent International Airport Islam Karimov",
+    credit: {
+      ru: "Фото здания аэропорта из открытого источника. Это не снимок наших работ.",
+      uz: "Aeroport binosining ochiq manbadagi surati. Bu bizning ishimizning surati emas.",
+      en: "A public photo of the airport building. Not a photo of our installation."
+    },
     title: { ru: "Международный аэропорт имени Ислама Каримова", uz: "Islom Karimov nomidagi xalqaro aeroport", en: "Islam Karimov International Airport" },
     place: { ru: "Ташкент", uz: "Toshkent", en: "Tashkent" },
     work: {
@@ -542,7 +547,12 @@ const PROJECTS = [
       uz: "Issiqlik va sovuqni yechish va o‘rnatish, chiller va gradirnya.",
       en: "Removal and installation of heating and cooling, a chiller and a cooling tower."
     } },
-  { city: "tashkent", map: "Центр исламской цивилизации Ташкент",
+  { city: "tashkent", img: "img/islamic.jpg", map: "Центр исламской цивилизации Ташкент",
+    credit: {
+      ru: "Открытое фото Центра исламской цивилизации в Ташкенте. В письме объект назван центром исламской культуры. Это здание, не снимок котельной.",
+      uz: "Toshkentdagi Islom sivilizatsiyasi markazining ochiq surati. Xatda obyekt islom madaniyati markazi deb yozilgan. Bu bino, qozonxona surati emas.",
+      en: "A public photo of the Center of Islamic Civilization in Tashkent. The letter names the Center of Islamic Culture. This is the building, not a photo of the boiler plant."
+    },
     title: { ru: "Центр исламской культуры", uz: "Islom madaniyati markazi", en: "Center of Islamic Culture" },
     place: { ru: "Ташкент", uz: "Toshkent", en: "Tashkent" },
     work: {
@@ -750,9 +760,11 @@ function renderProjects() {
     const photo = p.img
       ? `<div class="photo" style="background-image:url('${p.img}')"><span>${esc(p.place[lang])}</span></div>`
       : `<div class="photo plain"><span>${esc(p.place[lang])}</span></div>`;
-    const note = p.img
-      ? `<div class="credit">${esc(text("photoNote"))}</div>`
-      : `<div class="credit">${esc(text("noPhoto"))}</div>`;
+    const note = p.credit
+      ? `<div class="credit">${esc(p.credit[lang])}</div>`
+      : p.img
+        ? `<div class="credit">${esc(text("photoNote"))}</div>`
+        : `<div class="credit">${esc(text("noPhoto"))}</div>`;
     const href = "https://yandex.uz/maps/?text=" + encodeURIComponent(p.map);
     return `<article class="project">${photo}<div class="body"><div class="where">${esc(p.place[lang])}</div><h3>${esc(p.title[lang])}</h3><p>${esc(p.work[lang])}</p><a class="maplink" href="${href}" target="_blank" rel="noopener">${esc(text("onMap"))}</a>${note}</div></article>`;
   }).join("");
