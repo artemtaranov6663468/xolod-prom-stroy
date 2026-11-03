@@ -576,7 +576,12 @@ const PROJECTS = [
       uz: "Qozonxona, chiller, boylerxona.",
       en: "Boiler plant, chiller, hot-water room."
     } },
-  { city: "tashkent", map: "УзА издательство Шарк Ташкент",
+  { city: "tashkent", img: "img/shark.jpg", map: "УзА издательство Шарк Ташкент",
+    credit: {
+      ru: "Открытое фото высотки УзА на улице Буюк Турон. Это же здание издательства «Шарк». Снимок здания, не наших работ.",
+      uz: "Buyuk Turon ko‘chasidagi O‘zA minorasining ochiq surati. Bu «Sharq» nashriyotining o‘sha binosi. Bino surati, bizning ishimiz emas.",
+      en: "A public photo of the UzA tower on Buyuk Turon Street. It is the same Shark publishing building. A photo of the building, not of our work."
+    },
     title: { ru: "УзА и издательство «Шарк»", uz: "O‘zA va «Sharq» nashriyoti", en: "UzA news agency and Shark publishing house" },
     place: { ru: "Ташкент", uz: "Toshkent", en: "Tashkent" },
     work: {
@@ -608,7 +613,12 @@ const PROJECTS = [
       uz: "Chiller, qozonxonalar, fankoillar, ventilyatsiya, isitish, santexnika, havo oqimi.",
       en: "Chiller, boiler plants, fan coils, ventilation, heating, plumbing, fresh-air supply."
     } },
-  { city: "khiva", img: "img/khiva.jpg", map: "Президентская школа Хива",
+  { city: "khiva", img: "img/khiva-school.jpg", map: "Президентская школа Хива",
+    credit: {
+      ru: "Фото здания президентской школы в Хиве: над входом написано «Xiva shahridagi prezident maktabi». Это здание, не снимок монтажа.",
+      uz: "Xivadagi prezident maktabi binosining surati: kirishda «Xiva shahridagi prezident maktabi» yozuvi bor. Bu bino, montaj surati emas.",
+      en: "A photo of the presidential school building in Khiva. The entrance reads “Xiva shahridagi prezident maktabi”. The building, not a photo of the installation."
+    },
     title: { ru: "Президентская школа", uz: "Prezident maktabi", en: "Presidential school" },
     place: { ru: "Хива", uz: "Xiva", en: "Khiva" },
     work: {
@@ -664,9 +674,14 @@ const PROJECTS = [
       uz: "Chiller, qozonxona, fankoillar, ventilyatsiya, konditsionerlar, isitish, havo oqimi.",
       en: "Chiller, boiler plant, fan coils, ventilation, air conditioners, heating, fresh-air supply."
     } },
-  { city: "other", map: "Bobur Residence Ташкент",
+  { city: "tashkent", img: "img/bobur.jpg", map: "Bobur Residence Ташкент Бабура",
+    credit: {
+      ru: "Рисунок комплекса Bobur Residence с сайта застройщика, улица Бабура, Яккасарай. В письме город не указан. Это не фото готового дома и не снимок наших работ.",
+      uz: "Quruvchi saytidagi Bobur Residence rasmi, Bobur ko‘chasi, Yakkasaroy. Xatda shahar yozilmagan. Bu tayyor uyning surati ham, bizning ishimiz ham emas.",
+      en: "A drawing of Bobur Residence from the developer’s site, Bobur Street, Yakkasaray. The letter does not name the city. Not a photo of the finished building and not a photo of our work."
+    },
     title: { ru: "Жилой комплекс Bobur Residence", uz: "Bobur Residence turar joyi", en: "Bobur Residence housing" },
-    place: { ru: "Город в письме не указан", uz: "Xatda shahar yozilmagan", en: "City not stated in the letter" },
+    place: { ru: "Ташкент, Яккасарай", uz: "Toshkent, Yakkasaroy", en: "Tashkent, Yakkasaray" },
     work: {
       ru: "Отопление, вентиляция, водопровод и канализация на новостройках.",
       uz: "Yangi uylarda isitish, ventilyatsiya, suv va kanalizatsiya.",
