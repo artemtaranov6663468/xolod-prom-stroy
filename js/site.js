@@ -84,6 +84,12 @@ const I18N = {
     w6p: "Пост от 5 января 2026 года, подпись «#сварщик». Резка стального профиля на площадке.",
     w7t: "Теплообменник",
     w7p: "Кадр из видео компании от 7 апреля 2026 года: пластинчатый теплообменник, задвижка и обвязка. Название объекта в открытой подписи не указано.",
+    w8t: "Чиллер на стропах",
+    w8p: "Тот же пост от 2 августа 2026 года: «Разгрузка чиллера», в хештеге 16 тонн. Машина висит на кране.",
+    w9t: "Вентиляторы чиллера",
+    w9p: "Тот же пост. Блок с круглыми вентиляторами снимают с трала. Название здания не указано.",
+    w10t: "Сварка, тепло и холод",
+    w10p: "Кадр видео от 24 апреля 2026 года. Подпись: «#работа #теплохолод». Название здания не указано.",
     scaleTitle: "Масштаб одним взглядом",
     scaleLead: "Цифры взяты из списка объектов компании. Это не рекламный лозунг, а то, что написано в письме.",
     sc1: "котельная Humo Arena",
@@ -99,7 +105,8 @@ const I18N = {
     ct6: "здание нанотехнологий",
     dockLabel: "Позвонить директору",
     objTitle: "Где уже работали",
-    objLead: "Список из письма компании за 2025 год. Фото — здания или города из открытых источников. Это не фотографии самого монтажа. Если города в письме не было, так и написано.",
+    objLead: "Список из письма компании за 2025 год. Фото здания стоит только там, где нашлась открытая фотография места. Это не снимок монтажа. Фото самих работ — на странице «Работы»: они из Instagram, и в постах не написано, какое это здание. Поэтому одну разгрузку чиллера нельзя поставить на все 27 карточек.",
+    noPhoto: "Снимка именно этого объекта в письме нет. В открытых постах Instagram здание тоже не названо.",
     searchPh: "Найти: аэропорт, Хива, котельная",
     empty: "Ничего не нашлось. Попробуйте другое слово: чиллер, Бухара, больница.",
     photoNote: "Фото места из открытого источника. Это не снимок наших работ.",
@@ -232,6 +239,12 @@ const I18N = {
     w6p: "2026-yil 5-yanvardagi post, izoh «#сварщик». Maydonda po‘lat profilni kesish.",
     w7t: "Issiqlik almashinuvchi",
     w7p: "2026-yil 7-apreldagi kompaniya videosidan kadr: plastinkali issiqlik almashinuvchi, zaslonka va bog‘lash. Ochiq izohda obyekt nomi yo‘q.",
+    w8t: "Stropdagi chiller",
+    w8p: "O‘sha 2026-yil 2-avgustdagi post: «Разгрузка чиллера», xeshtegda 16 tonna. Mashina kranda osilgan.",
+    w9t: "Chiller ventilyatorlari",
+    w9p: "O‘sha post. Dumaloq ventilyatorli blok treylerdan olinyapti. Bino nomi yo‘q.",
+    w10t: "Payvand, issiqlik va sovuq",
+    w10p: "2026-yil 24-apreldagi video kadri. Izoh: «#работа #теплохолод». Bino nomi yo‘q.",
     scaleTitle: "Hajm bir qarashda",
     scaleLead: "Raqamlar kompaniya obyektlar ro‘yxatidan olingan. Bu shior emas, xatda yozilgan fakt.",
     sc1: "Humo Arena qozonxonasi",
@@ -247,7 +260,8 @@ const I18N = {
     ct6: "nanotexnologiya binosi",
     dockLabel: "Direktorga qo‘ng‘iroq",
     objTitle: "Qayerlarda ishlangan",
-    objLead: "2025-yilgi kompaniya xatidagi ro‘yxat. Suratlar ochiq manbadagi bino yoki shahar. Bu montaj suratining o‘zi emas. Xatda shahar yozilmagan bo‘lsa, shunday qoldirilgan.",
+    objLead: "2025-yilgi xatdagi ro‘yxat. Bino surati faqat ochiq manbada joy topilgan kartada turadi. Bu montaj surati emas. Ishlarning o‘zi «Ishlar» sahifasida: Instagramdan olingan, postda qaysi bino ekani yozilmagan. Shuning uchun bitta chiller tushirish suratini 27 ta kartaga qo‘yib bo‘lmaydi.",
+    noPhoto: "Aynan shu obyekt surati xatda yo‘q. Ochiq Instagram postlarida bino nomi ham yo‘q.",
     searchPh: "Qidirish: aeroport, Xiva, qozonxona",
     empty: "Hech narsa topilmadi. Boshqa so‘z yozing: chiller, Buxoro, shifoxona.",
     photoNote: "Joy surati ochiq manbadan. Bu bizning ishimizning surati emas.",
@@ -380,6 +394,12 @@ const I18N = {
     w6p: "Post of 5 January 2026, caption “#welder”. Cutting a steel section on site.",
     w7t: "Heat exchanger",
     w7p: "A frame from the company’s video of 7 April 2026: a plate heat exchanger, a valve and the piping. The public caption does not name the site.",
+    w8t: "Chiller on the slings",
+    w8p: "The same post of 2 August 2026: “Unloading a chiller,” and the hashtag says 16 tons. The machine is hanging from the crane.",
+    w9t: "Chiller fans",
+    w9p: "The same post. A unit with round fans is lifted off the trailer. The building is not named.",
+    w10t: "Welding, heating and cooling",
+    w10p: "A frame from the video of 24 April 2026. The caption is “#work #heatingandcooling.” The building is not named.",
     scaleTitle: "The scale at a glance",
     scaleLead: "The figures come from the company’s own site list. They are what the letter says, not a slogan.",
     sc1: "Humo Arena boiler plant",
@@ -395,7 +415,8 @@ const I18N = {
     ct6: "nanotechnology building",
     dockLabel: "Call the director",
     objTitle: "Where the work was done",
-    objLead: "The list comes from the company’s 2025 letter. Photos show the building or the city from public sources. They are not photos of the installation. If the letter did not name a city, the card says so.",
+    objLead: "The list comes from the company’s 2025 letter. A building photo appears only where a public photo of the place exists. It is not a photo of the installation. The work photos are on the Work page: they come from Instagram, and the posts do not name the building. The same chiller photo cannot be placed on all 27 cards.",
+    noPhoto: "The letter has no photo of this exact site. The public Instagram posts do not name the building either.",
     searchPh: "Search: airport, Khiva, boiler",
     empty: "Nothing found. Try another word: chiller, Bukhara, hospital.",
     photoNote: "Public photo of the place. Not a photo of our installation.",
@@ -729,7 +750,9 @@ function renderProjects() {
     const photo = p.img
       ? `<div class="photo" style="background-image:url('${p.img}')"><span>${esc(p.place[lang])}</span></div>`
       : `<div class="photo plain"><span>${esc(p.place[lang])}</span></div>`;
-    const note = p.img ? `<div class="credit">${esc(text("photoNote"))}</div>` : "";
+    const note = p.img
+      ? `<div class="credit">${esc(text("photoNote"))}</div>`
+      : `<div class="credit">${esc(text("noPhoto"))}</div>`;
     const href = "https://yandex.uz/maps/?text=" + encodeURIComponent(p.map);
     return `<article class="project">${photo}<div class="body"><div class="where">${esc(p.place[lang])}</div><h3>${esc(p.title[lang])}</h3><p>${esc(p.work[lang])}</p><a class="maplink" href="${href}" target="_blank" rel="noopener">${esc(text("onMap"))}</a>${note}</div></article>`;
   }).join("");
