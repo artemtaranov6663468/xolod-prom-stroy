@@ -1,0 +1,90 @@
+.wx-bar {
+  border-bottom: 1px solid rgba(213, 227, 231, 0.9);
+  background: rgba(255, 255, 255, 0.62);
+}
+.wx-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-height: 38px;
+  padding: 4px 0;
+}
+.wx {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: var(--deep);
+  font-size: 13px;
+  font-weight: 700;
+}
+.wx-ico { width: 20px; height: 20px; flex: none; }
+.wx-ico svg { width: 20px; height: 20px; display: block; }
+.wx-temp { font-weight: 800; font-variant-numeric: tabular-nums; }
+.wx-city { color: var(--muted); font-weight: 700; }
+.wx-meta {
+  display: flex;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.wx-toggle {
+  flex: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--deep);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.wx-toggle[aria-pressed="false"] { color: var(--muted); background: transparent; }
+
+.fx-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+  pointer-events: none;
+}
+.fx-garland {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 0;
+  height: 8px;
+  display: none;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 3;
+}
+.fx-garland.on { display: flex; }
+.fx-garland i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1c8fd6;
+  box-shadow: 0 0 6px currentColor;
+  animation: fx-blink 2.2s ease-in-out infinite;
+}
+.fx-garland i:nth-child(3n) { background: #e85d2a; color: #e85d2a; }
+.fx-garland i:nth-child(3n+1) { background: #7ec8f0; color: #7ec8f0; }
+.fx-garland i:nth-child(3n+2) { background: #f2c14e; color: #f2c14e; }
+.fx-garland i:nth-child(odd) { animation-delay: 0.6s; }
+@keyframes fx-blink {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+@media (max-width: 760px) {
+  .wx-inner { justify-content: space-between; gap: 8px; }
+  .wx { flex-wrap: wrap; gap: 4px 8px; font-size: 12px; }
+  .wx-meta { gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fx-garland i { animation: none; opacity: 0.8; }
+}
