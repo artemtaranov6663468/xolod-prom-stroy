@@ -152,7 +152,7 @@ const I18N = {
     f12v: "Директор — Александр Семихатов, +998 97 777 85 33. Заместитель директора — Артём Таранов, +998 97 102 09 49. Учредитель — Даврон Турсунов, +998 95 033 34 00.",
     note: "Код территории МҲОБТ: 1726280 — город Ташкент, Алмазарский район. Карту офиса можно открыть по кнопке ниже.",
     openMap: "Открыть офис на карте",
-    footer: "Ташкент, ул. Уста Ширин, 136. ИНН 306879816. Фото показывают место, а не выполненные работы."
+    footer: "Ташкент, ул. Уста Ширин, 136. ИНН 306879816."
   },
   uz: {
     brandSub: "Toshkent · 2019-yildan",
@@ -307,7 +307,7 @@ const I18N = {
     f12v: "Direktor — Aleksandr Semixatov, +998 97 777 85 33. Direktor o‘rinbosari — Artyom Taranov, +998 97 102 09 49. Ta’sischi — Davron Tursunov, +998 95 033 34 00.",
     note: "MHOBT hudud kodi: 1726280 — Toshkent shahri, Olmazor tumani. Ofis xaritasini pastdagi tugma ochadi.",
     openMap: "Ofisni xaritada ochish",
-    footer: "Toshkent, Usta Shirin ko‘chasi, 136. STIR 306879816. Surat joyini ko‘rsatadi, bajarilgan ishni emas."
+    footer: "Toshkent, Usta Shirin ko‘chasi, 136. STIR 306879816."
   },
   en: {
     brandSub: "Tashkent · since 2019",
@@ -462,7 +462,7 @@ const I18N = {
     f12v: "Director — Aleksandr Semikhatov, +998 97 777 85 33. Deputy director — Artem Taranov, +998 97 102 09 49. Founder — Davron Tursunov, +998 95 033 34 00.",
     note: "Territory code MHOBT: 1726280 — Tashkent, Olmazor district. The button below opens the office on the map.",
     openMap: "Open the office on the map",
-    footer: "Tashkent, 136 Usta Shirin street. Tax ID 306879816. Photos show the place, not the finished installation."
+    footer: "Tashkent, 136 Usta Shirin street. Tax ID 306879816."
   }
 };
 
